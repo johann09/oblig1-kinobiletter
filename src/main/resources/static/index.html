@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestilling av kinobilletter</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
 <h1>Bestilling av kinobilletter</h1>
 
-<label for="movieSelection">Velg film:</label>
-<select id="movieSelection" name="movie">
+<label for="filmValg">Velg film:</label>
+<select id="filmValg" name="movie">
     <option value="movie1">Film 1</option>
     <option value="movie2">Film 2</option>
     <option value="movie3">Film 3</option>
@@ -18,20 +19,24 @@
 
 <form>
     <div>
-        <label for="firstName">Fornavn:</label>
-        <input type="text" id="firstName" name="firstName">
+        <label for="antall" class = "labelFelt">Antall:</label>
+        <input type="number" id="firstName" name="firstName" class = "textFelt">
     </div>
     <div>
-        <label for="lastName">Etternavn:</label>
-        <input type="text" id="lastName" name="lastName">
+        <label for="firstName" class = "labelFelt">Fornavn:</label>
+        <input type="text" id="firstName" name="firstName" class = "textFelt">
     </div>
     <div>
-        <label for="phone">Telefonnr:</label>
-        <input type="tel" id="phone" name="phone">
+        <label for="lastName" class = "labelFelt">Etternavn:</label>
+        <input type="text" id="lastName" name="lastName" class = "textFelt">
     </div>
     <div>
-        <label for="email">Epost:</label>
-        <input type="email" id="email" name="email">
+        <label for="phone" class = "labelFelt">Telefonnr:</label>
+        <input type="tel" id="phone" name="phone" class = "textFelt">
+    </div>
+    <div>
+        <label for="email" class = "labelFelt">Epost:</label>
+        <input type="email" id="email" name="email" class = "textFelt">
     </div>
     <button type="button">Kjøp billett</button>
 </form>

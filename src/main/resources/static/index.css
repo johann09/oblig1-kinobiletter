@@ -1,0 +1,33 @@
+h1 {
+    font-size:40px;
+    padding-bottom:50px;
+}
+
+.textFelt {
+    display: inline-block; /* This allows the input to be on the same line as the text */
+    width: auto; /* Adjust the width as necessary, could be in px, em, %, etc., or just 'auto' */
+    margin: 0 10px 10px 0; /* Adds some space to the right and bottom of the input */
+    padding: 5px; /* Adds some space inside the input box */
+    vertical-align: middle; /* Aligns the input vertically in the middle relative to the label */
+    flex-grow: 1; /* Allows input to take up the remaining space */
+    padding: 5px; /* Adds some space inside the input box */
+}
+
+.labelFelt {
+    display: inline-block; /* This allows the label to be on the same line as the input */
+    margin-right: 10px; /* Adds some space between the label and the input */
+    vertical-align: middle; /* Aligns the label vertically in the middle relative to the input */
+    width: 80px; /* Set a fixed width for all labels */
+}
+
+#filmValg{
+    margin-bottom:30px;
+}
+
+button {
+    margin-top:30px;
+}
+
+#antall {
+    width:20px;
+}
