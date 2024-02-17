@@ -4,20 +4,19 @@ h1 {
 }
 
 .textFelt {
-    display: inline-block; /* This allows the input to be on the same line as the text */
-    width: auto; /* Adjust the width as necessary, could be in px, em, %, etc., or just 'auto' */
-    margin: 0 10px 10px 0; /* Adds some space to the right and bottom of the input */
-    padding: 5px; /* Adds some space inside the input box */
-    vertical-align: middle; /* Aligns the input vertically in the middle relative to the label */
-    flex-grow: 1; /* Allows input to take up the remaining space */
-    padding: 5px; /* Adds some space inside the input box */
+    display: inline-block;
+    width: auto;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    vertical-align: middle;
+    flex-grow: 1;
 }
 
 .labelFelt {
-    display: inline-block; /* This allows the label to be on the same line as the input */
-    margin-right: 10px; /* Adds some space between the label and the input */
-    vertical-align: middle; /* Aligns the label vertically in the middle relative to the input */
-    width: 80px; /* Set a fixed width for all labels */
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+    width: 80px;
 }
 
 #filmValg{
@@ -29,5 +28,26 @@ button {
 }
 
 #antall {
-    width:20px;
+    width:30px;
+}
+#visBestilling tbody tr:nth-child(even) {
+    background-color: #b3ccff;
+}
+#visBestilling tbody tr:nth-child(odd) {
+    background-color: #f0f0f5;
+}
+
+table {
+    border-collapse: collapse; /* This removes any space between borders */
+}
+
+tr{
+    padding:5px;
+}
+td{
+    padding: 5px 15px;
+}
+
+ td, th {
+    border-style: none;
 }

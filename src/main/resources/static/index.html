@@ -10,38 +10,56 @@
 <h1>Bestilling av kinobilletter</h1>
 
 <label for="filmValg">Velg film:</label>
-<select id="filmValg" name="movie">
-    <option value="movie1">Film 1</option>
-    <option value="movie2">Film 2</option>
-    <option value="movie3">Film 3</option>
+<select id="filmValg" name="film">
+    <option value="film 1">Film 1</option>
+    <option value="film 2">Film 2</option>
+    <option value="film 3">Film 3</option>
     <!-- Add more options here -->
 </select>
 
 <form>
     <div>
         <label for="antall" class = "labelFelt">Antall:</label>
-        <input type="number" id="firstName" name="firstName" class = "textFelt">
+        <input type="number" name ="antall" class = "textFelt" id = "antall">
     </div>
     <div>
-        <label for="firstName" class = "labelFelt">Fornavn:</label>
-        <input type="text" id="firstName" name="firstName" class = "textFelt">
+        <label for="fornavn" class = "labelFelt">Fornavn:</label>
+        <input type="text" id="fornavn" name="fornavn" class = "textFelt">
     </div>
     <div>
-        <label for="lastName" class = "labelFelt">Etternavn:</label>
-        <input type="text" id="lastName" name="lastName" class = "textFelt">
+        <label for="etternavn" class = "labelFelt">Etternavn:</label>
+        <input type="text" id="etternavn" name="etternavn" class = "textFelt">
     </div>
     <div>
-        <label for="phone" class = "labelFelt">Telefonnr:</label>
-        <input type="tel" id="phone" name="phone" class = "textFelt">
+        <label for="telefon" class = "labelFelt">Telefonnr:</label>
+        <input type="tel" id="telefon" name="telefon" class = "textFelt">
     </div>
     <div>
         <label for="email" class = "labelFelt">Epost:</label>
         <input type="email" id="email" name="email" class = "textFelt">
     </div>
-    <button type="button">Kjøp billett</button>
+    <button type="button" id="bestill">Kjøp billett</button>
 </form>
 
 <h2>Alle billetter</h2>
-<button type="button">Slett alle billetter</button>
+
+<table id = "visBestilling">
+    <thead>
+    <tr>
+        <th>Film</th>
+        <th>Antall</th>
+        <th>Fornavn</th>
+        <th>Etternavn</th>
+        <th>Telefon</th>
+        <th>Email</th>
+    </tr>
+    </thead>
+    <tbody>
+    <!-- Her -->
+    </tbody>
+
+</table>
+<button type="button" id = "slett">Slett alle billetter</button>
+<script src="index.js"></script>
 </body>
 </html>
