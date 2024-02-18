@@ -28,7 +28,7 @@ button {
 }
 
 #antall {
-    width:30px;
+    width:40px;
 }
 #visBestilling tbody tr:nth-child(even) {
     background-color: #b3ccff;

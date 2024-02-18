@@ -2,8 +2,7 @@
 let billettArr = [];
 
 
-
-//push objekt til array
+//push objekt til array og input-validering
 document.getElementById('bestill').addEventListener('click', function() {
 
     const billetter = {
@@ -15,13 +14,43 @@ document.getElementById('bestill').addEventListener('click', function() {
         email: document.getElementById('email').value
     };
 
+    //sjekker om billetter og antall innholder tall
+    //sjekker om antall er høyere enn 0
+    if (isNaN(billetter['antall'])
+        || (billetter['antall'] <= 0)
+        || (isNaN(billetter['telefon']))){
+        alert("Kun tall og positive verdier i telefon og antall");
+        return
+    }
+    else{
+        console.log("antall og telefon sjekket")
+        }
 
+    //sjekker at fornavn og etternavn inneholder kun bokstaver
+    if (/^[A-Za-zæøåÆØÅ]+$/.test(billetter['fornavn']) &&
+    (/^[A-Za-zæøåÆØÅ]+$/.test(billetter['etternavn']))) {
+        console.log("sjekket fornavn og etternavn");
+    }
+    else {
+        alert("Kun bokstaver i navn");
+        return
+    }
+
+    //email input validering, kode hentet fra stack overflow - ikke perfekt, men fungerer for de fleste email
+    if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        console.log("Validert email");
+    } else {
+        alert("Kun gyldig epost-adresse");
+        return
+    }
 
     billettArr.push(billetter);
-    console.log(billettArr);
+    console.log(billettArr); //sjekk at array er init
     visBestilling();
 });
 
+
+//setter inn bestilling i tabell
 function visBestilling() {
     const tabell = document.getElementById('visBestilling').getElementsByTagName('tbody')[0];
     tabell.innerHTML = '';
